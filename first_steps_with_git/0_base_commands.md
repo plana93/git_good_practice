@@ -34,19 +34,20 @@ git status
 Record changes to the repository
 ```
 git commit -m "message del commit" # use a specific commit git commit -c HEAD # it use the last commit message
-git commit --amed 
 ```
-
-
-
+Show commit logs
 ```git log```
-
+Show the actual branch and list all the available branches 
 ```git branch```
 
+Change the current branch
 ```git checkout <branch>```
+
+Update the current branch with the latest changes from the remote repository:
 
 ```git pull```
 
+Upload local changes to the remote repository:
 ```git push```
 
 
