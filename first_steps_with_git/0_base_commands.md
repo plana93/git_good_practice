@@ -23,14 +23,6 @@ Show the working tree status, more in details the differencies between:
 ```
 git status
 ```
-Show the working tree status, more in details the differencies between:
-- index file and the current HEAD commit
-- working tree and the index file
-- working tree and not tracked file by Git
-```
-git status
-```
-
 Record changes to the repository
 ```
 git commit -m "message del commit" # use a specific commit git commit -c HEAD # it use the last commit message
@@ -62,3 +54,16 @@ git add 0_base_commands.md
 git commit -m <message>
 git push 
 ```
+
+# New Branch example
+
+
+
+
+# List of terms that could be useful to know
+
+- **Workspace or Working tree:** is the directory tree of (source) files that you see and edit.
+- **Index (Staging Area): ** it is an intermediate area where changes are prepared before being committed. It serves as a staging ground for modifications.
+- **HEAD:** A special pointer that indicates the latest commit in the currently checked-out branch. It represents the most recent state of the project and is used as a reference for creating new commits.
+
+![alt text](./img/git_data_transport.jpeg)
