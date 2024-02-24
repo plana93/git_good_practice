@@ -5,8 +5,9 @@ The command ```--amend``` is used to modify the last commit. It is useful when y
 git add . 
 git commit --amend # it open the editor to give you the opportunity to modify the commit (if you want update it)
 ```
-
-<span style="color: red">
+<details>
+<summary><strong> Be carefull </strong></summary>
+<font style="color: red">
 If you run git commit --amend after already pushing the previous commit, it can cause issues, especially when collaborating with others on the same repository. Here's what might happen:
 
 Already shared commit:
@@ -19,4 +20,7 @@ Collaboration risks:
 
 Modifying the history of already shared commits can pose collaboration risks. Other collaborators who based their work on the original commit may face difficulties integrating the changes since the history would diverge.
 In general, it is not recommended to alter the history of commits after pushing to a shared repository. If it's absolutely necessary to make changes to an already shared commit, it's best to discuss it with the team and decide collectively how to handle the situation. If possible, avoid force pushing in a collaborative context.
-</span>
+</font>
+</summary>
+</details>
+
