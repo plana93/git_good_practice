@@ -23,6 +23,13 @@ Show the working tree status, more in details the differencies between:
 ```
 git status
 ```
+Show the working tree status, more in details the differencies between:
+- index file and the current HEAD commit
+- working tree and the index file
+- working tree and not tracked file by Git
+```
+git status
+```
 
 Record changes to the repository
 ```
