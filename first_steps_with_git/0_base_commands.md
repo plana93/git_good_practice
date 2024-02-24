@@ -66,7 +66,15 @@ or
 git branch -b feature-branch # create and switch to new branch 
 ```
 
-
+edit something 
+```
+git add .
+git commit -m <mesage>
+git push
+git checkout main
+git merge feature-branch
+git push 
+```
 
 # List of terms that could be useful to know
 

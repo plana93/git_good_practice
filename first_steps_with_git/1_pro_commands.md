@@ -25,4 +25,8 @@ In general, it is not recommended to alter the history of commits after pushing 
 </summary>
 </details>
 
-
+```
+git reset --soft HEAD^
+# do something else to come up with the right tree ...
+git commit -c ORIG_HEAD
+```
