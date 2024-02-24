@@ -1,22 +1,32 @@
-git init
+create a new repository 
+```git init```
 
-git clone <repository>
+to clone a repository 
+```git clone <repository>```
 
+to prepare the specific content staged for the next commit 
+```
 git add <file>
+git add .  # add all files
+git add -u .
+git add -A
+``` 
 
-git commit -m "Messaggio del commit
 
-git status
 
-git log
+```git commit -m "message del commit"```
 
-git branch
+```git status```
 
-git checkout <branch>
+```git log```
 
-git pull
+```git branch```
 
-git push
+```git checkout <branch>```
+
+```git pull```
+
+```git push```
 
 
 # Example 
