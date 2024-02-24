@@ -33,8 +33,10 @@ git status
 
 Record changes to the repository
 ```
-git commit -m "message del commit" # use a specific commit git
+git commit -m "message del commit" # use a specific commit git commit -c HEAD # it use the last commit message
+git commit --amed 
 ```
+
 
 
 ```git log```
