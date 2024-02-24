@@ -25,9 +25,84 @@ In general, it is not recommended to alter the history of commits after pushing 
 </summary>
 </details>
 
+___
+
+The commmand ```reset --soft```will undo the last commit, keeping the files in your Working Directory and Index as they were in the previous commit. You can then make additional changes, if necessary, and proceed with a new commit.
+
 ```
 git reset --soft HEAD^
 # do something else to come up with the right tree ...
 git add .
 git commit -c ORIG_HEAD
 ```
+
+
+
+<details>
+<summary><strong> Be carefull </strong></summary>
+
+**Uncommitted Changes:**
+
+- Make sure you have committed all the changes you want to keep before executing the reset. Uncommitted changes in your Index will be lost.
+
+**Shared History:**
+
+- If you have already shared the commit you are undoing with other collaborators through a push, <ins>you could cause confusion in the repository's history.</ins> Avoid using git reset --soft after sharing commits.
+
+**Use with Caution:**
+
+- A soft reset is a powerful operation that modifies the repository's history. Ensure you fully understand the impact before using it, especially in collaborative contexts.
+
+
+### Pratical example on what happen on the graph  
+
+Initial Scenario (Local and Remote):
+```
+A -- B -- C (main, HEAD)
+          \
+           D (origin/main)
+```
+
+
+Where:
+
+A, B, C are local commits.
+D is the corresponding commit on the remote branch (origin/main).
+
+After ```git reset --soft HEAD~1``` (Local):
+
+```
+A -- B (main, HEAD)
+       \
+        C
+          \
+           D (origin/main)
+```
+After the reset, main and HEAD move to commit B. The changes made in C are still present in your Working Directory and Index. **There is no impact on the remote repository so far.**
+
+After a new local commit (Local):
+
+```
+A -- B -- E (main, HEAD)
+       \
+        C
+          \
+           D (origin/main)
+```
+After making new changes and committing E, your local graph is updated.
+
+After git push (Remote):
+
+```
+A -- B -- E (main, HEAD)
+       \
+        C
+          \
+           D -- E (origin/main)
+```
+
+When you push, E is added to the remote repository. However, commit C remains in the local repository but is not present in the remote repository. 
+**It's important to note that if others have already fetched or pulled changes from the remote repository before your push, they might have commit C in their local repository.** Therefore, coordinating with the team before using git reset --soft on already shared commits is advisable.
+
+</summary>
+</details>
