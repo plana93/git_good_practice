@@ -16,9 +16,15 @@ git add -u . # add only modified file, no the new ones
 git add -A # add all files
 ```
 
+Show the working tree status, more in details the differencies between:
+- index file and the current HEAD commit
+- working tree and the index file
+- working tree and not tracked file by Git
+```
+git status
+```
 
-```git status```
-
+Record changes to the repository
 ```git commit -m "message del commit"```
 
 
