@@ -43,7 +43,7 @@ Upload local changes to the remote repository:
 ```git push```
 
 
-# Basic example 
+## Basic example 
 
 I created the 0_base_commands.md file 
 ```
@@ -55,8 +55,16 @@ git commit -m <message>
 git push 
 ```
 
-# New Branch example
+## New Branch example
 
+```
+git branch feature-branch #create a new branch "feature-branch"
+git checkout feature-branch # switch to new branch 
+```
+or 
+```
+git branch -b feature-branch # create and switch to new branch 
+```
 
 
 
