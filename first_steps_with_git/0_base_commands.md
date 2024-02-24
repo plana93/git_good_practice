@@ -8,8 +8,8 @@ to prepare the specific content staged for the next commit
 ```
 git add <file>
 git add .  # add all files
-git add -u .
-git add -A
+git add -u . 
+git add -A # add all files
 ``` 
 
 
