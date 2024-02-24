@@ -51,7 +51,7 @@ Upload local changes to the remote repository:
 ```git push```
 
 
-# Example 
+# Basic example 
 
 I created the 0_base_commands.md file 
 ```
