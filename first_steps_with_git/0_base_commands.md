@@ -1,22 +1,26 @@
 create a new repository 
-```git init```
+```
+git init
+```
 
 to clone a repository 
-```git clone <repository>```
+```
+git clone <repository>
+```
 
 to prepare the specific content staged for the next commit 
 ```
 git add <file>
 git add .  # add all files
-git add -u . 
+git add -u . # add only modified file, no the new ones
 git add -A # add all files
-``` 
+```
 
 
+```git status```
 
 ```git commit -m "message del commit"```
 
-```git status```
 
 ```git log```
 
