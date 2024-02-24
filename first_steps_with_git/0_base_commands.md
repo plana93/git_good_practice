@@ -33,8 +33,7 @@ git status
 
 Record changes to the repository
 ```
-git commit -m "message del commit" # use a specific commit 
-git commit -c
+git commit -m "message del commit" # use a specific commit git
 ```
 
 
