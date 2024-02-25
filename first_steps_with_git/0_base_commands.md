@@ -1,12 +1,6 @@
-create a new repository 
-```
-git init
-```
+create a new repository `git init`
 
-to clone a repository 
-```
-git clone <repository>
-```
+to clone a repository `git clone <repository>`
 
 to prepare the specific content staged for the next commit 
 ```
@@ -27,17 +21,19 @@ Record changes to the repository
 ```
 git commit -m "message del commit" # use a specific commit git commit -c HEAD # it use the last commit message
 ```
-Show commit logs
-```git log```
-Show the actual branch and list all the available branches 
-```git branch```
+Show commit logs `git log`
+
+Show the actual branch and list all the available branches  `git branch`
 
 Change the current branch
-```git checkout <branch>```
+`git checkout <branch>`
 
 Update the current branch with the latest changes from the remote repository:
+`git pull`
 
-```git pull```
+
+`git merge`
+
 
 Upload local changes to the remote repository:
 ```git push```
