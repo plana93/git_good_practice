@@ -19,7 +19,7 @@ git status
 ```
 Record changes to the repository
 ```
-git commit -m "message del commit" # use a specific commit git commit -c HEAD # it use the last commit message
+git commit -m "commit message" # use a specific commit git commit -c HEAD # it use the last commit message
 ```
 Show commit logs `git log`
 
