@@ -63,7 +63,7 @@ git checkout feature-branch # switch to new branch
 ```
 or 
 ```
-git branch -b feature-branch # create and switch to new branch 
+git checkout -b feature-branch # create and switch to new branch 
 ```
 
 edit something 
