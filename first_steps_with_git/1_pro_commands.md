@@ -148,3 +148,11 @@ git push --force
 ```
 Then you can continue with a PR or with the merge operation
 
+
+
+## Simple solution to squash last N commits together
+```
+git reset --soft HEAD~2  # N=2
+git commit -m "new commit message"
+git push -f
+```
