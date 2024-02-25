@@ -4,6 +4,8 @@ Come back to the main branch, COMMIT, and PUSH some changes to a file, e.g., `go
 
 Modify a file (e.g., `good_practice.md`) in the feat/features_branch_1 branch, COMMIT, and PUSH this change.
 
+Modify a file (e.g., `good_practice.md`) in the feat/features_branch_2 branch, COMMIT, and PUSH this change.
+
 Update the other two branches with small updates.
 
 Now we can see the procedure for the `rebase`.
