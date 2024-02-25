@@ -40,8 +40,6 @@ git add .
 git commit -c ORIG_HEAD
 ```
 
-
-
 <details>
 <summary><strong> Be carefull </strong></summary>
 

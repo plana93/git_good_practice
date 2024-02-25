@@ -31,9 +31,8 @@ Change the current branch
 Update the current branch with the latest changes from the remote repository:
 `git pull`
 
-
-`git merge`
-
+Join two or more development histories together `git merge`
+If you have executed git merge and encountered conflicts that you don't want to resolve, you can cancel the merge and revert to the previous state before starting the merge. You can do this using the `git merge --abort` command. This command will return your branch to the state it was in before the merge started. All changes made during the merge attempt will be discarded.
 
 Upload local changes to the remote repository:
 ```git push```
