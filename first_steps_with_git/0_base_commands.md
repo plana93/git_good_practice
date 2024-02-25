@@ -77,5 +77,4 @@ git push
 - **Index (Staging Area): ** it is an intermediate area where changes are prepared before being committed. It serves as a staging ground for modifications.
 - **HEAD:** A special pointer that indicates the latest commit in the currently checked-out branch. It represents the most recent state of the project and is used as a reference for creating new commits.
 
-
 ![alt text](./img/git_data_transport.jpeg)
