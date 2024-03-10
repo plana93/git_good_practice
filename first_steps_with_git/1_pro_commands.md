@@ -6,6 +6,10 @@ The command `--amend` is used to modify the last commit. It is useful when you f
 #edit amd modify what you want correct 
 git add . 
 git commit --amend # it open the editor to give you the opportunity to modify the commit (if you want update it)
+
+or 
+
+git commit --amend --no-edit #if you have alredy pushed the previous commit, you need to force push
 ```
 <details>
 <summary><strong> Be carefull </strong></summary>
