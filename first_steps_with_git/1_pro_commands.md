@@ -41,7 +41,7 @@ The commmand `reset --soft`will undo the last commit, keeping the files in your 
 git reset --soft HEAD^
 # do something else to come up with the right tree ...
 git add .
-git commit -c ORIG_HEAD
+git commit -a -c ORIG_HEAD
 ```
 
 <details>

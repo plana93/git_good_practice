@@ -13,3 +13,4 @@ git rebase main
 ```
 
 ### Squash commits before merging
+### Add in your repository the Git Hooks (enforcing coding standard) e.g. flake8 black isort mypy
