@@ -9,7 +9,7 @@ git commit --amend # it open the editor to give you the opportunity to modify th
 
 or 
 
-git commit --amend --no-edit #if you have alredy pushed the previous commit, you need to force push
+git commit --amend --no-edit #if you have alredy pushed the previous commit, you need to force push (better use --force-with-lease)
 ```
 <details>
 <summary><strong> Be carefull </strong></summary>
@@ -148,7 +148,9 @@ If you interrupt a rebase to fix some commits, you can continue with the command
 git add -u 
 git rebase --continue 
 
-git push --force
+git push --force 
+or
+git push --force-with-lease 
 ```
 Then you can continue with a PR or with the merge operation
 
