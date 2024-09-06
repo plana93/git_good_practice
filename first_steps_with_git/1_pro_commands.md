@@ -162,3 +162,47 @@ git reset --soft HEAD~2  # N=2
 git commit -m "new commit message"
 git push -f
 ```
+
+
+## `git stash`
+
+Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+Viewing stashes:
+
+- Use `git stash list` to see all saved stashes.
+- Use `git stash show` to inspect the details of a specific stash.
+
+Applying stashes:
+
+- Use `git stash` apply to restore stashed changes (you can apply them on top of any commit).
+
+Creating stashes:
+
+- Running `git stash` without arguments is the same as `git stash push`.
+By default, a stash is labeled as "WIP on branchname …", but you can provide a custom description when creating it.
+
+Referencing stashes:
+
+- The most recent stash is stored in refs/stash.
+Older stashes can be referenced using:
+`stash@{0}` for the latest stash.
+`stash@{1}` for the previous stash.
+Time-based references, like `stash@{2.hours.ago}`.
+You can also refer to stashes by their index number, e.g., `stash@{n}`.
+
+### Practical example of how to use `git stash` in a common scenario. 
+
+You're working on a new feature in a file called feature.py. You realize that there's a bug in the main.py file that needs to be fixed immediately. However, you don't want to commit your current work in feature.py because it's incomplete.
+
+Steps:
+
+- You start working on feature.py.
+- You check the status of your working directory to see the changes (use `git status`)
+- You decide to stash your changes in feature.py so that you can switch branches and fix the bug. 
+- Stash your changes `git stash`, you can add `-u` or `--include-untracked` to include the untracked files 
+- Switch branches to fix the bug and then return to your feature branch
+- **To get back to where you left off, you apply the stashed changes.** `git stash pop`
+
+Your changes to feature.py are restored, and you can continue working on your feature.
+
